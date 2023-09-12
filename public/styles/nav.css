@@ -5,8 +5,10 @@ nav {
   background-color: #4056A1;
   color: #FFFFFF;
   height: 120px;
+  width: 100%;
   padding-left: 1.5em;
   padding-right: 1.5em;
+  position: fixed; /* keep nav-bar on screen */
 }
 
 .nav-logo {
