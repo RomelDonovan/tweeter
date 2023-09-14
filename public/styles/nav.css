@@ -18,7 +18,9 @@ nav.navbar-top {
 
 /* This nav span is targetting all span elements within a nav element, and applying bungee font to TWEETER*/
 .navbar-logo {
-  font-family: 'Bungee';
+  font-family: 'Bungee', cursive;
+  font-size: 36px;
+  padding-top: 15px;
 }
 /*This allows us to align what is in our DIV Container appropriately, allows stack on top of one another and center*/
 .navbar-menu {
