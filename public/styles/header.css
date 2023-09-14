@@ -15,8 +15,8 @@ in the web app*/
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
-/*Adds color and font weight to the profile-name*/
+/*Adds color and font size to the profile-name*/
 #profile-name {
   color: white;
-  font-weight: 1000;
+  font-size: 36px;
 }
