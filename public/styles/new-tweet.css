@@ -1,35 +1,45 @@
-.new-tweet {
-  display:flex;
-  flex-direction: column;
-  background-color:#f4f1ec;
-  font-family: sans-serif;
-  margin: 30px;
-}
-
-#submit-tweet {
+#label-textarea {
   display: flex;
   flex-direction: column;
 }
-
+/*Provide tweet input area with an underline appearance rather than a whole form appearance*/
 #tweet-text {
-  background-color: #f4f1ec;
-  border: hidden;
-  line-height: 0.65;
-  border-bottom: 3px solid black;
-  margin-bottom: 1px;
+  border: none;
+  border-bottom: 5px solid #545149;
+  background: none;
 }
 
+/*Center all items within the footer and push them to opposite sides*/
+.maintweet-footer {
+  /*Add space between text area, and button/character count*/
+  padding-top: 1.0em;
+  padding-bottom: 1.0em;
+  display: flex;
+  /*Center the items along the cross axis*/
+  align-items: center;
+  /*Align flex items along main axis*/
+  justify-content: space-between;
+}
+/* Style the tweet button to match format of our logo in top left corner */
 #tweet-button {
   color: #ffffff;
   font-family: 'Bungee';
   background-color: #4056A1;
 }
 
-.tweet-footer {
+/*Styles for error messages that will appear write below tweet text area*/
+.error-message-container {
+  background-color: #c51244;
+  height: 3.5em;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: 'Bungee', sans-serif;
-  margin-top: 5px;
+  justify-content: center;
 }
 
+.fa-solid.fa-triangle-exclamation {
+  padding: 0.7em;
+  color:white;
+}
+
+.error-message-text {
+  color: white;
+}

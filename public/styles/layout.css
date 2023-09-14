@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -18,16 +21,37 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Source Sans Pro';
+}
+
+main {
+  /* Do not reference color and background color here, because main is within body, hence will take body color*/
+  width: 90%;
+  /* First value (1 em) is separating that amount of space from top and bottom, second value (auto) is centering the box*/
+  margin: 1em auto;
 }
 
 /*
- * Additional CSS can be defined below or in other CSS files, as per instructions
+ * Media Queries for desktop view: If screen size is equal to or surpasses 1024px, apply the following changes to layout. 
  */
 
- main {
-  width: 90%;
-  display: flex;
-  align-items: center;
-  background-color: #f4f1ec;
- }
+/*Move compose tweet and tweet timeline to the right half of the screen in a column, one on top of other*/
+@media only screen and (min-width: 1024px) {
+  .container {
+    margin-top: 6em;
+    margin-right: 2em;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+
+  /*Drop profile header from the top of screen to the left half of the screen*/
+  .profile-header-for-desktop {
+    margin-top: 2.9em;
+    margin-left: 1.5em;
+    padding-left: 2em;
+    width: 40%;
+    float: left;
+  }
+}

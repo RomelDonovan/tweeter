@@ -1,16 +1,22 @@
-header {
+/*This document provides styles for the header that contains the profile photo and name
+in the web app*/
+
+/* Target the header that specifically belongs to the body, intended for backdrop of profile picture! */
+#profile-header {
+  padding-top: 1em;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 700px;
+  height: 400px;
   width: 100%;
-  background-color: #6e00d4;
-  background-color: #000000;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 120px;
+  background-color: #1b1c24;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
-.avatar-name {
+/*Adds color and font weight to the profile-name*/
+#profile-name {
   color: white;
-  font-size: 36px;
+  font-weight: 1000;
 }
