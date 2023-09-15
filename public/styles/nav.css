@@ -1,0 +1,30 @@
+nav.navbar-top {
+  /*Box Model Properties*/
+  color: #ffffff;
+  background-color: #4056A1;
+  height: 120px;
+  width: 100vw;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  /*Flex Properties*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*This fixes the nav menu at the top of the page*/
+  position: fixed;
+  /*This adds specificity and states the nav banner is x away from the top of the page, in this case 0. */
+  top: 0;
+}
+
+/* This nav span is targetting all span elements within a nav element, and applying bungee font to TWEETER*/
+.navbar-logo {
+  font-family: 'Bungee', cursive;
+  font-size: 36px;
+  padding-top: 15px;
+}
+/*This allows us to align what is in our DIV Container appropriately, allows stack on top of one another and center*/
+.navbar-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,22 @@
+/*This document provides styles for the header that contains the profile photo and name
+in the web app*/
+
+/* Target the header that specifically belongs to the body, intended for backdrop of profile picture! */
+#profile-header {
+  padding-top: 1em;
+  display: flex;
+  height: 400px;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 120px;
+  background-color: #1b1c24;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+}
+
+/*Adds color and font size to the profile-name*/
+#profile-name {
+  color: white;
+  font-size: 36px;
+}
